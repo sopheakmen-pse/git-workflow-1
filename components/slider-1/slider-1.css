@@ -1,0 +1,35 @@
+.container {
+  margin: 16px;
+}
+
+.scroll-images {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.product {
+  min-width: 100%;
+  min-height: 300px;
+  border: 1px solid #999;
+}
+
+@media screen and (min-width: 480px) {
+  .product {
+    min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    min-width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product {
+    min-width: calc(100% / 4);
+  }
+}
